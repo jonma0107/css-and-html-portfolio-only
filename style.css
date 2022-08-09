@@ -89,9 +89,6 @@ section{
   background-position: center center;
 }
 
-
-
-
 .about-tile{
   grid-area: about;
 }
@@ -136,6 +133,11 @@ section{
   object-fit: cover;
 }
 
+/*****************************************
+                   PROJECTS
+*****************************************/
+
+/* Galería de proyectos generada con https://grid.layoutit.com/ */
 
 #projects {
   background-color: black;
@@ -227,3 +229,86 @@ section{
 .photo-15 { grid-area: photo-15; background-image: url(img/work-15.png);}
 
 .photo-16 { grid-area: photo-16; background-image: url(img/work-16.png);}
+
+
+/*****************************************
+                   POSTS
+*****************************************/
+
+#posts{
+  padding: 10px;
+  background-color: rgb(66, 186, 255);
+  display: grid;
+  grid-template: repeat(2, 300px) / repeat(3, 350px); /*filas primero*/
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+#posts .post{
+  display: grid;
+  align-content: end;
+  border-radius: 5px;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+#posts .post a{
+  color: white;
+  text-decoration: none;
+}
+
+#posts .post .title{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+}
+#posts .post .title:hover{
+  background-color: white;
+  color: black;
+}
+
+#posts .post.post-1{
+  background-image: url(img/work-02.png);
+}
+#posts .post.post-2{
+  background-image: url(img/work-09.png);
+}
+#posts .post.post-3{
+  background-image: url(img/work-08.png);
+}
+#posts .post.post-4{
+  background-image: url(img/work-11.png);
+}
+#posts .post.post-5{
+  background-image: url(img/work-10.png);
+}
+#posts .post.post-6{
+  background-image: url(img/work-02.png);
+}
+
+
+/*****************************************
+                   CONTACT
+*****************************************/
+
+#contact {
+  background-color: rgb(26, 72, 151);
+  display: grid;
+  grid-template: auto 100px / 700px; /*fila primero*/
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+#contact form input,
+#contact form textarea{
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
