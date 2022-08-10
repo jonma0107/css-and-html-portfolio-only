@@ -499,18 +499,19 @@ section{
   width: 50px;
   height: 50px;
   background: #27ae27;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
   color: white;
   font-size: 22px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 500px){
   .top{
-    /* position: fixed;
+    position: fixed;
     width: 50px;
     height: 50px;
     background: #27ae27;
@@ -520,7 +521,7 @@ section{
     text-align: center;
     line-height: 50px;
     color: white;
-    font-size: 22px; */
+    font-size: 22px;
     border-radius: 50%;
   }
 }
